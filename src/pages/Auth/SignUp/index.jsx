@@ -16,41 +16,28 @@ function SignUp(){
 
   return (
     <div className={styles.container}>
-
       <div className={styles.content_container}>
-
         <div className={styles.title_container}>
           {t('createAccount')}
         </div>
-
         <div className={styles.main_content_container}>
-
           <div className={styles.description}>
             <span className={styles.description_title}>{t('registerYourInformation')}</span>
             {t('whoCanRegister')}
           </div>
-
           <div className={styles.auth_container}>
-
             <div className={styles.form_container}></div>
-
             <div className={styles.social_medias_container}>
               <div className={styles.social_medias_title}>
-
                 {t('alternativeSignIn')}
               </div>
-
               <SocialMedias />
-
             </div>
             <DataPolicy />
-
             <hr />
-
             <button className={styles.sign_in_button} onClick={handleNavigate}>
               {t('signIn')}
             </button>
-            
           </div>
         </div>
       </div>
